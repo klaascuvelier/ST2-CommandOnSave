@@ -1,0 +1,5 @@
+{
+  "commands": [
+  	"/Users/klaascuvelier/Projects/example/::rsync -avz /Users/klaascuvelier/Projects/example/ server@server:/home/server/projects/example/ &",
+  ]
+}
