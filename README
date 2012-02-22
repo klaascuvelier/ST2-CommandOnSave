@@ -1,0 +1,16 @@
+ABOUT
+=====
+This plugin executes a certain command after saving a file.
+Commands are folder-specific. 
+
+INSTALLATION
+============
+Clone the git repository into your packages folder:
+$ git clone git@github.com:klaascuvelier/ST2-CommandOnSave.git CommandOnSave
+
+SETTINGS
+========
+There a Base File for settings, in there you specify which command needs to be executed.
+You can see some examples in the file.
+
+Note: if you have rules (commands) for the parent of a folder, both commands will be executed.
