@@ -10,13 +10,10 @@ class CommandOnSave(sublime_plugin.EventListener):
         current_file = view.file_name()
 
         for entry in folders:
-            s = entry.index('::')
-            c = entry[s:][2:]
-            f = entry[:s]
+            cmd_path, cmd = entry.split('::', 1)
 
-            if current_file[:len(f)] == f:
-                if len(c) > 0:
-                    subprocess.call([c], shell=True)
+            if current_file.startswith(cmd_path) and len(cmd) > 0:
+                subprocess.call([cmd], shell=True)
 
 
 def debug(message):
